@@ -33,7 +33,7 @@ const ProductList = (props) => {
         </div>
       ) : (
         <ul className={`${props.viewModeClasses}`}>
-          {products.map((item) => (
+          { products && products.map((item) => (
             <ProductItem key={item._id} product={item} />
           ))}
         </ul>
